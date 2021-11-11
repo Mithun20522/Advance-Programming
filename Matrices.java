@@ -520,35 +520,6 @@ class Matrices {
 
     }
 
-
-    public void CreateMatrix(HashMap<String, Mat1> mMap) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Number of matrix: ");
-        int n = sc.nextInt();
-        sc.nextLine();
-
-        for (int a = 0; a < n; a++) {
-            System.out.print("Enter the name of matrix: ");
-            String mName = sc.nextLine();
-
-            System.out.print("No. of rows: ");
-            int row = sc.nextInt();
-
-            System.out.print("No. of coloums: ");
-            int col = sc.nextInt();
-            sc.nextLine();
-            if ((row >= 1 && row <= 3) && (col >= 1 && col <= 3)) {
-                Mat1 mat = new Mat1(row, col);
-                mat.CreateMatrix();
-                mMap.put(mName, mat);
-                System.out.println();
-            } else {
-                System.out.println("Range only 1x1 to 3x3 is allowed here.....");
-                System.out.println();
-            }
-        }
-    }
-
     public void Task_List() {
 
         System.out.println("1. Take matrices as input and label them with appropriate matrix-types.");
@@ -1225,4 +1196,3 @@ class Mat1 implements Matrices3 {
         return new double[][] { { Integer.MIN_VALUE }, { Integer.MIN_VALUE } };
     }
 }
-

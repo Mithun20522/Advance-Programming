@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.HelloController">
+   <children>
+      <ImageView fx:id="img" fitHeight="576.0" fitWidth="401.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Board.png" />
+         </image></ImageView>
+
+      <ImageView fx:id="diceImage" fitHeight="56.0" fitWidth="62.0" layoutX="176.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dice1.png" />
+         </image></ImageView>
+      <Button fx:id="rollButton" layoutX="168.0" layoutY="563.0" mnemonicParsing="false" onAction="#roll" opacity="0.0" prefHeight="45.0" prefWidth="58.0" text="Roll">
+         <font>
+            <Font size="35.0" />
+         </font></Button>
+      <Label fx:id="Name1" layoutY="614.0" text="Label" textFill="#623ebc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Name2" layoutY="590.0" text="Label" textFill="#4ad611">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="arrow" fitHeight="49.0" fitWidth="70.0" layoutX="232.0" layoutY="582.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow.gif" />
+         </image>
+      </ImageView>
+
+      <ImageView fx:id="p1" fitHeight="38.0" fitWidth="42.0" layoutX="1.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BlueGoti.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="p2" fitHeight="38.0" fitWidth="42.0" layoutX="14.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@greenToken.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="48.0" fitWidth="73.0" layoutX="318.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="318.0" layoutY="578.0" mnemonicParsing="false" onAction="#SwitchToScene2" opacity="0.0" prefHeight="48.0" prefWidth="55.0" text="Button" />
+
+   </children>
+</AnchorPane>

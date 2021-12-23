@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.HelloController">
+    <children>
+        <ImageView fitHeight="730.0" fitWidth="437.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Second.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="138.0" layoutY="589.0" mnemonicParsing="false" onAction="#SwitchToScene1" opacity="0.0" prefHeight="34.0" prefWidth="52.0" text="Button" />
+        <TextField fx:id="p1pl" layoutX="137.0" layoutY="279.0"  prefHeight="25.0" prefWidth="129.0" promptText="Player1" />
+        <TextField fx:id="p2pl" layoutX="137.0" layoutY="312.0"  prefHeight="25.0" prefWidth="129.0" promptText="player2" />
+        <Button layoutX="169.0" layoutY="539.0" mnemonicParsing="false" onAction="#SwitchToScene4Game" opacity="0.0" prefHeight="34.0" prefWidth="98.0" text="PLAY" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9874a1" height="71.0" layoutX="60.0" layoutY="372.0" stroke="BLACK" strokeType="INSIDE" width="209.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9f59a1" height="34.0" layoutX="134.0" layoutY="491.0" stroke="BLACK" strokeType="INSIDE" width="136.0" />
+        <Button layoutX="202.0" layoutY="142.0" mnemonicParsing="false" onAction="#SwitchToScene3Hint" opacity="0.07" prefHeight="25.0" prefWidth="32.0" text="Button" />
+    </children>
+</AnchorPane>
